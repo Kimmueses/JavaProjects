@@ -57,6 +57,7 @@ public class Email {
             }
             return new String (password);
         }
+//    Setter methods
 //    Will need to set the mailbox capacity
     public void setMailboxCapacity (int capacity) {
         this.mailboxCapacity = capacity;
@@ -68,6 +69,18 @@ public class Email {
 //    Will need to change the password
     public void changePassword (String password) {
         this.password = password;
+    }
+//    Getter methods
+    public int getMailboxCapacity() {
+        return mailboxCapacity;
+    }
+
+    public String getAlternateEmail() {
+        return alternateEmail;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }
 
